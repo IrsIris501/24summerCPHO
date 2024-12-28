@@ -1,0 +1,274 @@
+\documentclass[a4paper]{article}
+
+
+\usepackage{amsmath}
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\title{光学讲义}
+
+
+\author{陈虹骏}
+
+\begin{document}
+	\maketitle
+
+	\section{费马原理}
+	\subsection{光力类比}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/screenshot001}
+		\caption{22猿辅导1-2}
+		\label{fig:screenshot001}
+	\end{figure}
+	
+	利用$\delta \int p_x \mathrm{d} x + p_y \mathrm{d} y +p_z \mathrm{d} z =0$和$\delta \int n \mathrm{d}s=0$类比可以得到$p_x, p_y, p_z \leftrightarrow n$. 因此动能$T=\frac{p^2}{2m}=\frac{p^2}{2}=\frac{n^2}{2}$，利用能量守恒，总能量为$E$即可得到势能.
+	
+	\subsection{变分法}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/bianfen}
+		\caption{变分法}
+		\label{fig:bianfen}
+	\end{figure}
+	
+	\section{反射与折射的光线题}
+	彩虹？
+	
+	\section{球面 透镜 棱镜成像}
+	\subsection{透镜光焦度}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/guangjiaodu}
+		\caption{光焦度}
+		\label{fig:guangjiaodu}
+	\end{figure}
+	
+	\begin{framed}
+		一个近视300度的人，佩戴一种折射率1.6的球面镜片，镜片的前表面半径为后表面的4倍，使得近视度数减小到50度. 请问两个表面半径分别为多少？
+	\end{framed}
+	
+	\subsection{临界光线}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/linjieguangxian}
+		\caption{2023量子1}
+		\label{fig:linjieguangxian}
+	\end{figure}
+	
+	\section{光学成像仪器}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/5}
+		\caption{22启航3-7}
+		\label{fig:5}
+	\end{figure}
+	
+	\section{理想光具组理论}
+	焦点：过焦点的光线与平行于光轴的光线共轭. 
+	
+	主点：横向放大率为1的一对共轭面，也是平移的起点和终点. 
+	
+	节点：角放大率为1，过节点的光线方向不变.
+	
+	光线入射到主面上，入射点平移到另一主面的相同位置，再出射.
+	\begin{framed}
+		两个薄透镜相距$d=40cm$，焦距分别为$f_1=+20cm, f_2=-40cm$，求联合系统的焦点、主点位置.
+	\end{framed}
+	
+	\section{矩阵光学}
+	本质：光线追迹法，方便电脑计算.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/matrixoptics}
+		\caption{2023思博楷瑞6}
+		\label{fig:matrixoptics}
+	\end{figure}
+	
+	\section{像差}
+	色差：由于色散效应导致的不同颜色的光不汇聚到同一处.
+	
+	球差：轴上物点发出的大孔径光束不汇聚于一点.
+	
+	色差难以对整个可见光区域都消除，但是可以对特定波长消色差.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/xiangcha}
+		\caption{消色差}
+		\label{fig:xiangcha}
+	\end{figure}
+	
+	\section{双光束干涉}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/interfere1}
+		\caption{双光束干涉}
+		\label{fig:interfere1}
+	\end{figure}
+	
+	\section{干涉仪}
+	\begin{framed}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.2\linewidth]{fig_optics/interfere2}
+			\caption{膨胀干涉仪}
+			\label{fig:interfere2}
+		\end{figure}
+	\end{framed} 
+	
+	\section{多光束干涉}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/multiinterfere}
+		\caption{22启航5-4}
+		\label{fig:multiinterfere}
+	\end{figure}
+	
+	
+	\section{时间相干性和空间相干性}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/xianggan}
+		\caption{22启航6-2}
+		\label{fig:xianggan}
+	\end{figure}
+	
+	时间相干性是光源发光的非单色性导致的，对应的不确定关系是$\Delta E \Delta t \ge h$，对于常见的高斯波包（变换限制波包）取等号. 
+	
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/spacial}
+		\caption{空间相干性}
+		\label{fig:spacial}
+	\end{figure}
+	
+	空间相干性是光源不同位置发出的非相干光叠加使得衬比度降低导致的. 其对应的反比公式为$$b\cdot \Delta \theta \approx \lambda$$
+	
+	\section{衍射——振幅矢量法}
+	\begin{framed}
+		需要讲吗？
+	\end{framed}
+	
+	\section{衍射——半波带法}
+	\begin{framed}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.2\linewidth]{fig_optics/half_wave_band}
+			\caption{半波带法例题}
+			\label{fig:halfwaveband}
+		\end{figure}
+	\end{framed}
+	
+	\section{衍射——积分公式与傅里叶光学}
+	在傍轴条件下，利用惠更斯-菲涅尔原理可以得到，对于相距z的屏面$(x,y,0)$和$(u,v,z)$，有$$U(u,v,z)=\frac{e^{ikz} }{i\lambda z}e^{i\frac{k}{2z}(u^2+v^2)}\iint_{-\infty}^{\infty} [U(x,y,0)e^{i\frac{k}{2z}(x^2+y^2)}]\times e^{-i\frac{2\pi}{\lambda z}(xu+yv)}\mathrm{d}x\mathrm{d}y.$$
+	傍轴条件下频谱的传播规律为$$F_l(f_X,f_Y)=F_o(f_X,f_Y)\mathrm{exp}(-i\pi \lambda d (f_X^2+f_Y^2))$$
+	
+	利用这两式可以得到，对于常见的夫琅禾费衍射装置，即衍射屏在前焦面，接受屏在后焦面，有$$U(u,v)=\frac{1}{i\lambda F}F_o(\frac{u}{\lambda F},\frac{v}{\lambda F})$$或者$$U(u,v)=\frac{1}{i\lambda F} \iint_{-\infty}^{\infty} U(x,y,0)e^{-i\frac{2\pi}{\lambda F}(xu+yv)}\mathrm{d}x\mathrm{d}y$$
+	\\
+	\\
+	
+	\begin{framed}
+		一透射光栅空间频率500线/mm，有效尺寸为30mm，单元为狭缝，狭缝宽度为周期的一半. 求：
+		（1） 该光栅的前两级光谱在波长500nm处的角分辨率？
+		（2） 能分辨的最小波长差值？
+		（3）假设加工出现缺陷，10的整数倍的那些狭缝不透光，求相对的光强分布. 
+	\end{framed}
+	
+	\section{全息光学}
+	\begin{framed}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.2\linewidth]{fig_optics/holo1}
+			\caption{全息例题}
+			\label{fig:holo1}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.2\linewidth]{fig_optics/holo2}
+			\caption{全息例题（续）}
+			\label{fig:holo2}
+		\end{figure}
+	\end{framed}
+	
+	\section{偏振}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/polarized_interfere}
+		\caption{2022思博楷瑞2}
+		\label{fig:polarizedinterfere}
+	\end{figure}
+	
+	\section{菲涅尔公式相关}
+	\begin{framed}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/fresnel}
+		\caption{菲涅尔公式例题}
+		\label{fig:fresnel}
+	\end{figure}
+	\end{framed}
+	
+	\section{晶体光学}
+	\begin{framed}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.2\linewidth]{fig_optics/crystal1}
+			\caption{双折射例题}
+			\label{fig:crystal1}
+		\end{figure}
+	\end{framed}
+	
+	双折射晶体中o光和e光的传播方向一般通过\colorbox{yellow}{惠更斯作图法}确定.
+	
+	一些晶体光学器件：渥拉斯顿棱镜、罗雄棱镜、波片、补偿器.
+	
+	\section{电光效应与磁光效应}
+	\begin{framed}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/elecmag}
+		\caption{电光效应与磁光效应例题}
+		\label{fig:elecmag}
+	\end{figure}
+	\end{framed}
+	
+	磁致旋光效应、克尔效应（平方电光效应）与泡克尔斯效应（线性电光效应）.
+	
+	\section{光的色散}
+	\begin{framed}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.2\linewidth]{fig_optics/dispersion}
+			\caption{色散例题1}
+			\label{fig:dispersion}
+		\end{figure}
+		
+		色散例题2：计算彩虹角度.
+	\end{framed}
+	
+	\section{散射}
+	散射主要分为波长不变的散射与波长变化的散射. 其中波长不变的散射主要有瑞利散射与米氏散射.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.2\linewidth]{fig_optics/rayleighscater}
+		\caption{瑞利散射}
+		\label{fig:rayleighscater}
+	\end{figure}
+	波长变化的散射主要是拉曼散射.
+	\begin{framed}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.2\linewidth]{fig_optics/ramanscatter}
+			\caption{拉曼散射例题}
+			\label{fig:ramanscatter}
+		\end{figure}
+		
+	\end{framed}
+\end{document}
